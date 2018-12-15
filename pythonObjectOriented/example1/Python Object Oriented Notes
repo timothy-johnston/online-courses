@@ -1,0 +1,9 @@
+Class attribute:
+    Defined in Class
+    ex: Class Employee:
+            numberOfWorkingHours = 40
+Instance attribute:
+    Defined in instance of Class   
+    ex: employeeOne = Employee()
+        employeeOne.name = "Tom"
+    Python looks for instance attributes first and upon not finding     any it looks for class attributes
