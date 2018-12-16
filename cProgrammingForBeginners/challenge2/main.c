@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+
+
+
 int main()
 {
     double width = 5.0;
@@ -65,6 +68,8 @@ int main()
 
 
     //Arrays
+    int unusedArrayToShowHowToInitialize[5] = {2, 3, 5, 2, 7};
+    int seeAboveButDifferent[100] = {2, 3, 1};  //Sets first three to those numbers, but the rest to 0;
     int myNumbers[5];
     int count = 10;
     int sum = 0;
@@ -81,5 +86,33 @@ int main()
     }
 
 
+    //multidimensional arrays
+    int array2d[2][5];      //2 rows 3 columns
+    int array2dInitialized[3][4] = {
+        {10, 20, 30, 40},
+        {15, 25, 35, 45},
+        {47, 48, 49, 50}
+    };
+
+        //Can also do 3, 4, .. n dimensional as well. Definition/initialization:
+            //11 minute mark, section 8 lecture 49 of c programming for beginners udemy course
+            //https://bnymellon.udemy.com/c-programming-for-beginners-/learn/v4/t/lecture/8795274?start=0
+
+
+    //Functions
+        //Remember to add function prototypes to top [int returnANumber();] if needing to use that function within others
+    printSum(3, 4);
+    printf("The returned result is: %i\n", returnSum(5, 9));
+
     return 0;
+}
+
+void printSum(int x, int y)
+{
+    int result = x + y;
+    printf("The sum is: %i\n", result);
+}
+int returnSum(int x, int y) {
+    int result = x + y;
+    return result;
 }
