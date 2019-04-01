@@ -1,9 +1,10 @@
+function doSomething() {
+    for (var i = 1; i < 5; i++) {
+        console.log(i);
+    }
 
-
-function log(message) {
-    console.log(message);
+    console.log('Finally: ' + i);
 }
 
-var message = "Hello tj";
+doSomething();
 
-log(message);
