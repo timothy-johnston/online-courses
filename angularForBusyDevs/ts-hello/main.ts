@@ -1,10 +1,13 @@
-function doSomething() {
-    for (var i = 1; i < 5; i++) {
-        console.log(i);
-    }
+class Point {
+    x: number;
+    y: number;
 
-    console.log('Finally: ' + i);
+    draw() {
+        console.log('x: ' + this.x + ' y: ' + this.y);
+    };
 }
 
-doSomething();
-
+let point = new Point();
+point.x = 1;
+point.y = 2;
+point.draw();
