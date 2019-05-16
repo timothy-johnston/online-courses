@@ -1,13 +1,4 @@
-class Point {
-    x: number;
-    y: number;
+import { Point } from "./point";
 
-    draw() {
-        console.log('x: ' + this.x + ' y: ' + this.y);
-    };
-}
-
-let point = new Point();
-point.x = 1;
-point.y = 2;
-point.draw();
+let point = new Point(1,2);
+point.draw()j;
